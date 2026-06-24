@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>make changes to text</title>
+</head>
+<body>
+    <h2>making changes to text</h2>
+
+    <p id="text">This is some sample text.</p>
+    <div class = "buttons">
+        <button onclick="changeText()">Change Text</button>
+        <button onclick="changeColor()">Change Color</button>
+        <button onclick="changeFontSize()">Change Font Size</button>
+        <button onclick="changeFontStyle()">Change Font Style</button>
+        <button onclick="changeTextAlignment()">Change Text Alignment</button>
+        <button onclick="changeTextCase()">Change Text Case</button>
+        <button onclick="resetText()">Reset Text</button>
+    </div>
+    <script>
+        function changeText() {
+            let text = document.getElementById('text');
+            text.textContent = 'Text has been changed!';
+        }
+
+        function changeColor() {
+            let text = document.getElementById('text');
+            text.style.color = 'blue';
+        }
+
+        function changeFontSize() {
+            let text = document.getElementById('text');
+            text.style.fontSize = '20px';
+        }
+
+        function changeFontStyle() {
+            let text = document.getElementById('text');
+            text.style.fontStyle = 'italic';
+        }
+
+        function changeTextAlignment() {
+            let text = document.getElementById('text');
+            text.style.textAlign = 'center';
+        }
+
+        function changeTextCase() {
+            let text = document.getElementById('text');
+            text.style.textTransform = 'uppercase';
+        }
+
+        function resetText() {
+            let text = document.getElementById('text');
+            text.textContent = 'This is some sample text.';
+            text.style.color = 'black';
+            text.style.fontSize = '16px';
+            text.style.fontStyle = 'normal';
+            text.style.textAlign = 'left';
+            text.style.textTransform = 'none';
+        }
+             rectangle.style.width = '200px';
+             rectangle.style.height = '100px';
+    </script>
+</body>
+</html>
